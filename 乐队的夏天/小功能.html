@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小功能.html</title>
+	<style type="text/css">
+		#bt1{
+			width: 100px;
+			height: 500px;
+			background: red;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<button id="bt1"></button>
+</body>
+<script type="text/javascript">
+	var Btn1 = document.getElementById('bt1');
+	function oBt1(){
+		Btn1.onclick = function(){
+			Btn1.style.background = 'blue';
+		}
+	}
+	oBt1();
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>044-数据类型转换.html</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var op = parseInt('565');//转换整数
+	var opi = parseFloat('565.555');//转换小数
+	var opt = parseFloat('sads');//如果转换内部不是数字 会返回 NaN（not a Number的缩写）;
+	console.log(op);
+	console.log(opi);
+	console.log(opt);
+//判断是否是数字 是数字返回 false 不是返回 true
+	var lo = isNaN(parseInt('123'));
+	var lp = isNaN(parseInt('black'));
+	console.log(lo);
+	console.log(lp);
+</script>
+</html>
