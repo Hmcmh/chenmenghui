@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>065-获取元素.html</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.demop{
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<p id="demo"></p>
+	<div class="demop">1</div>
+	<div class="demop">2</div>
+</body>
+<script type="text/javascript">
+	var a = document.getElementById('demo');//id名称
+	console.log(a);
+	var b = document.getElementsByTagName('div');//标签名称
+	console.log(b);
+	var c = document.querySelector('.demop');
+										//选中选择器 匹配第一个
+	console.log(c);
+	var d = document.querySelectorAll('.demop')//选中选择器 匹配所有符合节点
+	console.log(d);
+	var e = 
+</script>
+</html>
