@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>074-数组基本操作.html</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var arr1 = [1,2,3];
+	var result = arr1.push(1)//数组末尾添加元素,返回添加后数组的长度
+	console.log('result:::',result)
+	var result2 = arr1.pop()//删除数组末尾元素 ，返回删除的元素
+	console.log('result2:::',result2)
+	var result3 = arr1.shift()//删除数组第一个元素，返回删除的数组
+	console.log('result3:::',result3);
+	var result4 = arr1.unshift(1);//把元素添加到数组的头部，返回添加后数组的长度
+	console.log('result4:::',result4);
+	var result5 = arr1.splice(0,2,'插入值1','插入值2')//返回包含从原数组中删除项的新数组，如果没有删除则返回空数组
+	console.log('result5',result5)
+			//三种 
+				//返回包含从原数组中删除项的新数组，如果没有删除则返回空数组
+				var arr2 = [4,5,6];
+			//删除,数组.splice(起始下标，删除个数)
+				console.log('原数组arr2:::',arr2);
+				var result6 = arr2.splice(0,3)
+				console.log('result6:::',result6)
+			//插入，数组.splice(起始下标，0，插入值，插入值2...)
+			//替换，数组.splice(起始下标，删除个数，插入值1，插入值2)	
+	var result7 = arr1.join('+');//用指定的字符把数组每一项返回，原数组不变
+	console.log('result7:::',result7);
+	var arr3 = [6,6,6];
+	var result8 = arr1.concat(arr3);//把数组1和数组2合并成一个新数组并返回，原数组不变
+	console.log('result8:::',result8);
+	var result9 = arr2.slice(0,1)//slice(起始下标，结束下标)基于当前数组创建一个新的数组（包含起始数据，不包含结束数据）并返回，原数组不变
+	console.log('result9:::',result9);
+	var result10 = arr1.indexOf(0,2);//从数组头部开始向后查找，返回找到全等匹配的数组的下标，如果没有找到返回-1
+	console.log('result10:::',result10);
+	var result11 = arr1.lastIndexOf(0,2)//(查找项，起始下标)从数组末部开始向前查找，返回查到全等匹配的下标，没有返回-1
+	console.log('result11:::',result11)
+</script>
+</html>
