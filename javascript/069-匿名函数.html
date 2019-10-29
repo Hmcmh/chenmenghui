@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>069-匿名函数.html</title>
+	<style type="text/css">
+		button{
+			width: 10px;
+			height: 10px;
+		}
+	</style>
+</head>
+<body>
+	<button id="demo"></button>
+	<div id="demo1"></div>
+</body>
+<script type="text/javascript">
+	var oBt = document.getElementById('demo'); 
+	var oDiv = document.getElementById('demo1');
+	oBt.onclick = function(){
+		oDiv.style.width = '100px';
+		oDiv.style.height = '100px';
+		oDiv.style.background = 'blue';
+	} 
+	console.log(oBt)
+	console.log(oDiv)
+</script>
+</html>
