@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>081-DOM-获取兄弟节点.html</title>
+</head>
+<body>
+	<div id="demo1"></div>
+	<div id="demo2"></div>
+	<div id="demo3"></div>
+</body>
+<script type="text/javascript">
+	var opt1 = document.getElementById('demo1');
+	var opt2 = document.getElementById('demo2');
+	var opt3 = document.getElementById('demo3');
+	
+	var nT1 = opt1.nextSibling;//下一个文本节点或者元素节点
+	var nT2 = opt2.previousSibling;//上一个文本节点或者元素节点
+	console.log(nT1);
+	console.log(nT2);
+
+	var nT3 = opt2.nextElementSibling;//下一个元素节点
+	var nT4 = opt2.previousElementSibling;//上一个元素节点
+	console.log(nT3);
+	console.log(nT4);
+</script>
+</html>

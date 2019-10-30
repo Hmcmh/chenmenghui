@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>080-DOM-获取父节点.html</title>
+</head>
+<body>
+	<ul>
+		<li id="demo"></li>
+	</ul>
+</body>
+<script type="text/javascript">
+	var father = document.getElementById('demo') 
+	var parent =  father.parentNode;//获取父节点对象
+	var parent1 = father.offsetParent;//子节点绝对定位时获取参考的父节点对象
+	console.log(parent);
+	console.log(parent1);
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>079-DOM-节点关系-获取子节点.html</title>
+</head>
+<body>
+	<ul id="demo">
+		<li></li>
+	</ul>
+</body>
+<script type="text/javascript">
+	var oo = document.getElementById('demo')
+	var opo = oo.childNodes;//返回一个数组，包含父节点中的所有文本节点和元素节点
+	var ppd = oo.children;//返回一个数组，包含父节点中的所有元素节点
+	var ppd1 = oo.firstChild;//分别指向
+	var ppd2 = oo.lastChild;//childNodes中的第一个和最后一个
+	var ppd3 = oo.firstElementChild;//分别指向children中的 
+	var ppd4 = oo.lastElementChild;//第一个和最后一个
+	console.log(opo);
+	console.log(ppd);
+	console.log(ppd1);
+	console.log(ppd2);
+	console.log(ppd3)
+	console.log(ppd4)
+</script>
+</html>
