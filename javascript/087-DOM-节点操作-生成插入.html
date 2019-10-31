@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>087-节点操作-生成插入.html</title>
+</head>
+<body>
+	<ul id="demo1">
+		<li id="demo2"></li>
+	</ul>
+</body>
+<script type="text/javascript">
+	var oul1 = document.getElementById('demo1');
+	var oul2 = document.getElementById('demo2');
+	var sc =document.createElement('div');
+	oul1.insertBefore(sc,oul2)
+	//html 写出 父节点 和子节点
+	//script 生成 节点
+	// 父节点.insertBefore(node1,node2)
+	//效果是 在父节点中的node2之前插入node1  
+</script>
+</html>

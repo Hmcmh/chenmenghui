@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>089-克隆节点.html</title>
+</head>
+<body>
+	<ul id="demo">
+		<li></li>
+	</ul>
+</body>
+<script type="text/javascript">
+	var a = document.getElementById('demo');
+	var b = a.cloneNode();
+	var c = a.cloneNode(true);//参数true表示克隆节点的同时克隆所有后代
+	console.log(a)//原节点
+	console.log(b)//克隆节点
+	console.log(c)//克隆节点以及后代
+</script>
+</html>
