@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>098-延时定时器.html</title>
+</head>
+<body>
+	<button id="demo">关闭</button>
+</body>
+<script type="text/javascript">
+	var pp = document.getElementById('demo');
+	var a = setTimeout('console.log(1)',2000);
+	console.log(a)
+	//setTimeout(函数或者代码字符串,时间) 开启延迟型定时器,返回一个唯一的整型数字代表定时器的ID
+	pp.onclick=function(){
+		clearTimeout(1);
+		//clearTimeout(定时器的ID) 关闭延迟型定时器
+	}
+</script>
+</html>

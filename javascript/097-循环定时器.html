@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>097-循环定时器.html</title>
+</head>
+<body>
+	<button id="demo">关闭</button>
+</body>
+<script type="text/javascript">
+	var pp = document.getElementById('demo');
+	var a  = setInterval('console.log(1)',200);
+	console.log(a)
+	//setInterval(函数或者代码字符串,时间) 开启循环型定时器,返回一个唯一的整型数字代表定时器的ID
+	pp.onclick=function(){
+		clearInterval(1)
+		//clearInterval(定时器的ID) 关闭循环型定时器
+	}
+</script>
+</html>
