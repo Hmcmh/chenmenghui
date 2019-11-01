@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>096-history.html</title>
+</head>
+<body>
+	<button id="demo1">回退</button>
+	<button id="demo2">跳转</button>
+	<button id="demo3">前进</button>
+</body>
+<script type="text/javascript">
+	var a = document.getElementById('demo1');
+	var b = document.getElementById('demo2');
+	var c = document.getElementById('demo3');
+	
+	a.onclick = function(){
+		history.go()	
+	}
+	
+	b.onclick = function(){
+		history.back()
+	}
+
+	c.onclick = function(){
+		history.forward()
+	}
+</script>
+</html>

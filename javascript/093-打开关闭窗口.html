@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>093-打开关闭窗口.html</title>
+</head>
+<body>
+	<ul>
+		<li></li>
+	</ul>
+	<button id="demo">新页面</button>
+	<button id="demo1">关闭页面</button>
+</body>
+<script type="text/javascript">
+	var a = document.getElementById('demo');
+	var p = document.getElementById('demo1');
+	a.onclick = function(){
+		window.open()
+			//window.open(地址，打开方式)
+			//地址的取值 完整的url  ，本地页面 
+			//"about:blank",表示空白页面
+			//打开方式取值："_blank",空白页面打开,默认值
+			//"_self",当前窗口打开
+	}
+	p.onclick = function(){
+		window.close()
+	}
+</script>
+</html>

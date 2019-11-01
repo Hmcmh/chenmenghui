@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>094-location对象.html</title>
+</head>
+<body>
+	<button id="demo">跳转</button>
+</body>
+<script type="text/javascript">
+	var a = document.location;//代表当前页面的相关信息对象，可以读取和赋值
+	var b = window.location;
+	//代表当前页面的相关信息对象，可以读取和赋值
+	var c = window.location.href;
+	//window.location.href 属性代表当前页面的完整url
+	var pin = document.getElementById('demo');
+	pin.onclick = function(){
+		window.location.assgin('https://www.baidu.com');
+		//assgin方法会跳转页面
+	}
+
+	//loaction的其他属性
+	// var z = window.loaction.host;
+	// var x = window.loaction.hostname;
+	var x = window.loaction.pathname;
+	// console.log(z);
+	console.log(x);
+</script>
+</html>
