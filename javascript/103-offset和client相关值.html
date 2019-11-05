@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>103-offset和client相关值.html</title>
+	<style type="text/css">
+		#demo{
+			width: 500px;
+			height: 500px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="demo"></div>
+</body>
+<script type="text/javascript">
+	//offset相关值
+			var ab = document.getElementById('demo');
+			console.log('元素的左外边框和参考父元素左内边框的距离',ab.offsetLeft)
+			console.log('元素的上外边框和参考父元素上内边框的距离',ab.offsetTop)
+			console.log('元素的宽(水平方向上边框+水平方向上内边距+内容宽+垂直滚动条)',ab.offsetWidth)
+			console.log('元素的高(垂直方向上边框+垂直方向上内边距+内容高+水平滚动条)',ab.offsetHeight)
+	//client相关值
+			console.log('元素的客户区宽(水平方向上内边距+内容宽),不包括滚动条',ab.clientWidth)
+			console.log('元素的客户区高(垂直方向上内边距+内容高),不包括滚动条',ab.clientHeight)
+	//client相关值通常用来确定视口的宽高,但需要注意兼容性问题
+	//确定浏览器视口宽高(不包括滚动条)
+	//
+	//标准模式用document.documentElement.clientWidth/clientHeight
+	//混杂模式用 document.body.clientWidth/clientHeight
+
+	/*
+		var w =0,h=0;
+	if(document.compatMode == 'CSS1Compat'){
+		w = document.documentElement.clientWidth;
+		h = document.documentElement.clientHeight;
+	}else{
+		w = document.body.clientWidth;
+		h = document.body.clientHeight;		
+	}
+	*/
+</script>
+</html>
