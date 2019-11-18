@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>105-window相关值.html</title>
+	<style type="text/css">
+		body{
+			height: 3000px;
+		}
+	</style>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var i = 0;
+	window.onload = function(){//页面加载完毕触发
+		console.log(i++);
+	}
+	window.onresize = function(){//拖动窗口时候触发
+		console.log(i++)
+	}
+	window.onscroll = function(){//拖动滚动条时候触发
+		console.log(i++);
+	}
+</script>
+</html>

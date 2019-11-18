@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <head>
-	<title>001-juqery使用.html</title>
+	<meta charset="utf-8">
+	<title></title>
 </head>
 <body>
-    <p>点我消失</p>
-    <p>点我消失</p>
-    <p>点我消失</p>
+	<ul>
+		<li>列表1</li>
+		<li>列表2</li>
+		<li>列表3</li>
+	</ul>
 </body>
-<!-- 本地引入 -->
-
-	<!-- <script src="./js/jquery-1.12.4.min.js"></script>-->
-
-
-<!-- 网络引入 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-
-
-
+<script type="text/javascript" src="./js/jquery-1.12.4.js"></script>
 <script type="text/javascript">
-$(function(){
-	$('p').click(function(){
-		$(this).hide()
+	/*$(function(){
+		alert('aaa');
+		console.log('kkk')
+	})*/
+	$(function(){
+		var $li = $(li);//返回jQuery对象
+		var li = $li[0];//返回DOM对象
+		alert(li.innerHTML);
 	})
-})
 </script>
 </html>
