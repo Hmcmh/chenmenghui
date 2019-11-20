@@ -1,0 +1,63 @@
+/*顶部导航开始*/
+nav{
+	z-index: 99;
+	font-size: 17px;
+	color: #aaaaaa;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background: red;
+	background: #f9f9f9; 
+	border-bottom: 1px solid #ececec;
+}
+nav li{
+	float: left;
+	line-height: 50px;
+	margin-left: 110px;
+}
+.uli1{
+	float: right;
+}
+.uli1 li{
+	margin-left: -75px;
+	margin-right: 110px;
+}
+li:hover{
+	color:#f87ba1;
+	transition-duration: 0.2s;
+}
+/*顶部导航开始*/
+
+/*轮播图展示区*/
+header{
+	position: relative;
+	top: 50px;
+	width: 1143px;
+	height: 422px;
+	background: red;
+	margin: 20px auto;
+}
+header .lun-l{
+	width: 751px;
+	height: 422px;
+	background: pink;
+	float: left;
+}
+header .guang-1{
+	width: 362px;
+	height: 202px;
+	float: right;
+	background: yellow;
+}
+header .guang-2{
+	margin-top: 18px;
+	float: right;
+	width: 362px;
+	height: 202px;
+	background: skyblue;
+}
+/*轮播图展示区*/
+body{
+	height: 800px;
+}
