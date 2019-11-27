@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>004-jquery对象.html</title>
+</head>
+<body>
+	<div class="ll"></div>
+	<div class="ll"></div>
+	<div class="ll"></div>
+	<div class="ll"></div>
+	<div class="ll"></div>
+	<div class="ll"></div>
+	<div class="ll"></div>
+	<div class="ll"></div>
+</body>
+<script type="text/javascript" src="./js/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+	$(function(){
+		console.log($(document.querySelector('div')));//dom元素转化为jquery对象
+		console.log($('div')[0]);//通过数组获取下标
+		console.log($('div').get(0));//通过·get方法获取对象
+	})
+</script>
+</html>

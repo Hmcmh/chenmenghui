@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>003-jquery核心函数$的调用.html</title>
+</head>
+<body>
+	<div>1</div>
+	<div id="box">1</div>
+	<div class="rd">1</div>
+	<div>1</div>
+	<div>1</div>
+</body>
+<script type="text/javascript" src="./js/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+	var res = $(function(){
+		console.log($('div'))
+		console.log($('#box'))
+		console.log($('rd'))
+		console.log($('<h1>hello</h1>'));
+		var oDiv = document.getElementById('box');
+		$(oDiv).css({
+			background:'red'
+		}
+			)
+	})
+</script>
+</html>
